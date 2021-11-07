@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<!-- This is a basic html file, nothing that bad about it -->
+
+<html>
+
+    <!-- Anything in head isn't going to show up on the website at all -->
+    <head>
+
+        <!-- Names the tab -->
+        <title> A Simple To-Do List | Create Account </title>
+
+        <!-- Using CSS to get some formatting things done surprisingly self explanatory -->
+        <style>
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        body {
+            display: table;
+        }
+
+        .my-block {
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .button {
+            border: none;
+            color: white;
+            padding: 16px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 2px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .button1 {
+            background-color: white; 
+            color: black; 
+            border: 2px solid #0780f1;
+        }
+        
+        .button1:hover {
+            background-color: #0780f1;
+            color: white;
+        }
+
+        p {
+            font-size: 50px;
+        }
+
+        body {
+            background-color: white;
+        }
+
+        </style>
+
+    </head>
+
+    <!-- You'll end up seeing this on the website -->
+    <body>
+    
+    <!-- Start a division section, sort of like starting a new section in a paper -->
+    <div class="my-block">
+
+        <!-- <p> is a paragraph, <b> bolds the text, <br /> is a line break -->
+       <p><b> A simple To-Do List </b> <br /> </p>
+        
+       <!-- Form is like filling up an actual form, but it can call on other links, in this case
+        it is calling on /login when the button is pressed -->
+       <form action = "/login">
+           <button class = "button button1"> Login </button> <br />
+       </form>
+       
+       <!-- Here, form is calling on /create_account when its corresponding button is pressed -->
+       <form action = "/create_account">
+           <button class = "button button1"> Create Account </button>
+       </form>
+
+    </div>
+
+    </body>
+
+</html>
